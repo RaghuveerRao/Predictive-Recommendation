@@ -1,0 +1,1183 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (demo_10users)' inline='true' name='federated.1ov3p9g1cg944h10qf39i1e8lpag' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='demo_10users' name='excel-direct.12fbddy1jz8gyk12u7s4q0luegx8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='G:/My Drive/Trends Marketplace/demo_10users.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.12fbddy1jz8gyk12u7s4q0luegx8' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:G7661:no:A1:G7661:0' header='yes' outcome='2'>
+            <column datatype='integer' name='product_id' ordinal='0' />
+            <column datatype='real' name='pred' ordinal='1' />
+            <column datatype='integer' name='user_id' ordinal='2' />
+            <column datatype='integer' name='order_dow' ordinal='3' />
+            <column datatype='string' name='order_hour_of_day' ordinal='4' />
+            <column datatype='string' name='product_name' ordinal='5' />
+            <column datatype='integer' name='department_id' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pred]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>pred</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_dow</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_dow]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>order_dow</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_hour_of_day</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_hour_of_day]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>order_hour_of_day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[department_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>department_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G7661:no:A1:G7661:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Department Id' datatype='integer' name='[department_id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Order Dow' datatype='integer' name='[order_dow]' role='dimension' type='ordinal' />
+      <column caption='Order Hour Of Day' datatype='string' name='[order_hour_of_day]' role='dimension' type='nominal' />
+      <column caption='Pred' datatype='real' name='[pred]' role='measure' type='quantitative' />
+      <column caption='Product Id' datatype='integer' name='[product_id]' role='dimension' type='ordinal' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.548092' measure-ordering='alphabetic' measure-percentage='0.451908' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (demo_10users)' name='federated.1ov3p9g1cg944h10qf39i1e8lpag' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ov3p9g1cg944h10qf39i1e8lpag'>
+            <column-instance column='[pred]' derivation='Attribute' name='[attr:pred:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_dow]' derivation='None' name='[none:order_dow:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[order_hour_of_day]' derivation='None' name='[none:order_hour_of_day:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product_name]' derivation='None' name='[none:product_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[user_id]' derivation='None' name='[none:user_id:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Order Dow' datatype='integer' name='[order_dow]' role='dimension' type='ordinal' />
+            <column caption='Order Hour Of Day' datatype='string' name='[order_hour_of_day]' role='dimension' type='nominal' />
+            <column caption='Pred' datatype='real' name='[pred]' role='measure' type='quantitative' />
+            <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[attr:pred:qk]' included-values='in-range'>
+            <min>0.20000000000000001</min>
+          </filter>
+          <filter class='categorical' column='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_dow:ok]'>
+            <groupfilter function='member' level='[none:order_dow:ok]' member='5' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_hour_of_day:nk]'>
+            <groupfilter function='level-members' level='[none:order_hour_of_day:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:product_name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Cheez-It Baked Snack Crackers&quot;</bucket>
+              <bucket>&quot;Organic Tomato Cluster&quot;</bucket>
+              <bucket>&quot;Popcorn&quot;</bucket>
+              <bucket>&quot;Granny Smith Apples&quot;</bucket>
+              <bucket>&quot;Watermelon Chunks&quot;</bucket>
+              <bucket>&quot;Organic Love Crunch Dark Chocolate Macaroon Granola&quot;</bucket>
+              <bucket>&quot;Almond Milk Strawberry Yogurt&quot;</bucket>
+              <bucket>&quot;Organic Unsalted Butter&quot;</bucket>
+              <bucket>&quot;Organic Whole Milk&quot;</bucket>
+              <bucket>&quot;Clementines&quot;</bucket>
+              <bucket>&quot;Organic Beef Uncured Hot Dogs&quot;</bucket>
+              <bucket>&quot;Organic Large Grade AA Brown Eggs&quot;</bucket>
+              <bucket>&quot;Organic Sea Salt Roasted Seaweed Snacks&quot;</bucket>
+              <bucket>&quot;Bread Crumbs&quot;</bucket>
+              <bucket>&quot;Apples&quot;</bucket>
+              <bucket>&quot;Small Hass Avocado&quot;</bucket>
+              <bucket>&quot;Carrots&quot;</bucket>
+              <bucket>&quot;Organic Mayonnaise&quot;</bucket>
+              <bucket>&quot;Organic Small Bunch Celery&quot;</bucket>
+              <bucket>&quot;Natural Lime Flavor Sparkling Mineral Water&quot;</bucket>
+              <bucket>&quot;Grain Free Turkey Canned Cat Food&quot;</bucket>
+              <bucket>&quot;Tissue with Lotion Aloe &amp; E&quot;</bucket>
+              <bucket>&quot;Peanut Butter Cereal&quot;</bucket>
+              <bucket>&quot;Yellow Onions&quot;</bucket>
+              <bucket>&quot;Organic Tomato Puree&quot;</bucket>
+              <bucket>&quot;Italian Style Chicken Meatballs with Mozarella Cheese&quot;</bucket>
+              <bucket>&quot;BBQ Recipe Beef Frozen Sandwiches&quot;</bucket>
+              <bucket>&quot;Organic Black Beans&quot;</bucket>
+              <bucket>&quot;Ranch Dressing&quot;</bucket>
+              <bucket>&quot;Soy Sauce&quot;</bucket>
+              <bucket>&quot;Adult Maximum Strength DM Max Liquid Cough &amp; Chest Congestion Relief&quot;</bucket>
+              <bucket>&quot;Organic Old Fashioned Rolled Oats&quot;</bucket>
+              <bucket>&quot;Lemon Seltzer Water&quot;</bucket>
+              <bucket>&quot;Unsweetened Chocolate Almond Breeze Almond Milk&quot;</bucket>
+              <bucket>&quot;Organic Mixed Vegetables&quot;</bucket>
+              <bucket>&quot;100\% Orange Juice No Pulp&quot;</bucket>
+              <bucket>&quot;Organic Black Pepper&quot;</bucket>
+              <bucket>&quot;Birthday Cake Light Ice Cream&quot;</bucket>
+              <bucket>&quot;Gourmet Mango Mochi Sherbet Bonbons&quot;</bucket>
+              <bucket>&quot;Lemonade Fruit Bars&quot;</bucket>
+              <bucket>&quot;Ground Cumin&quot;</bucket>
+              <bucket>&quot;Garlic Chicken&quot;</bucket>
+              <bucket>&quot;Macaroni &amp; Cheese Sauce with Broccoli Steamers&quot;</bucket>
+              <bucket>&quot;Toll House Chocolate Chip Cookie Dough&quot;</bucket>
+              <bucket>&quot;Organic Baby Broccoli&quot;</bucket>
+              <bucket>&quot;Smokestack Mixed Four&quot;</bucket>
+              <bucket>&quot;Simply 3 Cheese Tortellini&quot;</bucket>
+              <bucket>&quot;Ranch Original Topping &amp; Dressing&quot;</bucket>
+              <bucket>&quot;Hard Salami&quot;</bucket>
+              <bucket>&quot;Blueberry Pint&quot;</bucket>
+              <bucket>&quot;Garlic Couscous&quot;</bucket>
+              <bucket>&quot;Moisturizing Shampoo Strawberries &amp; Cream&quot;</bucket>
+              <bucket>&quot;PM Extra Strength Caplets&quot;</bucket>
+              <bucket>&quot;Woman&apos;s Raspberry Leaf Tea Bags&quot;</bucket>
+              <bucket>&quot;Organic Pinto Beans&quot;</bucket>
+              <bucket>&quot;Fully Cooked Boneless Ribs in Sweet Hickory Sauce&quot;</bucket>
+              <bucket>&quot;Ground Turkey Breast&quot;</bucket>
+              <bucket>&quot;Smart Ground Original Veggie Protein Crumbles&quot;</bucket>
+              <bucket>&quot;Electrolyte Water&quot;</bucket>
+              <bucket>&quot;ALMONDBREEZE UNSWEETENED&quot;</bucket>
+              <bucket>&quot;Protein Caramel Nut Chewy Bars&quot;</bucket>
+              <bucket>&quot;Whole Kernel Corn No Salt Added&quot;</bucket>
+              <bucket>&quot;Organic Grade A Free Range Large Brown Eggs&quot;</bucket>
+              <bucket>&quot;Large Burrito Flour Tortillas&quot;</bucket>
+              <bucket>&quot;Variety Pack Ice Cream Bars&quot;</bucket>
+              <bucket>&quot;Premium Indian Tonic Water&quot;</bucket>
+              <bucket>&quot;Meyer Lemon&quot;</bucket>
+              <bucket>&quot;Light CocoWhip! Coconut Whipped Topping&quot;</bucket>
+              <bucket>&quot;Organic Fire Roasted Corn&quot;</bucket>
+              <bucket>&quot;Uncured Hickory Smoked Sunday Bacon&quot;</bucket>
+              <bucket>&quot;Tortilla Chips, Corn, Red Hot Blues&quot;</bucket>
+              <bucket>&quot;Homestyle Classics Meatloaf&quot;</bucket>
+              <bucket>&quot;Organic Cheese Frozen Pizza&quot;</bucket>
+              <bucket>&quot;Celery Hearts&quot;</bucket>
+              <bucket>&quot;Real Guacamole&quot;</bucket>
+              <bucket>&quot;Strawberry Preserves&quot;</bucket>
+              <bucket>&quot;Creamy Queso Fresco Chipotle&quot;</bucket>
+              <bucket>&quot;Light Vanilla Soymilk&quot;</bucket>
+              <bucket>&quot;Frozen Organic Wild Blueberries&quot;</bucket>
+              <bucket>&quot;Gluten Free Pancake and Baking Mix&quot;</bucket>
+              <bucket>&quot;Italian Red Wine Vinegar&quot;</bucket>
+              <bucket>&quot;Hearty Beef Barley RTS Soup&quot;</bucket>
+              <bucket>&quot;Dark Chocolate Pretzels with Sea Salt&quot;</bucket>
+              <bucket>&quot;Raspberries&quot;</bucket>
+              <bucket>&quot;Organic Lactose Free 1\% Lowfat Milk&quot;</bucket>
+              <bucket>&quot;Oven Roasted Turkey Breast&quot;</bucket>
+              <bucket>&quot;Organic Rosemary&quot;</bucket>
+              <bucket>&quot;Mild to Moderate Dry Eye Lubricating Eye Drops&quot;</bucket>
+              <bucket>&quot;Strawberries&quot;</bucket>
+              <bucket>&quot;Synergy Raspberry Chia Kombucha&quot;</bucket>
+              <bucket>&quot;Cola Cans&quot;</bucket>
+              <bucket>&quot;Chopped Walnuts&quot;</bucket>
+              <bucket>&quot;Irish Breakfast&quot;</bucket>
+              <bucket>&quot;Unrefined Virgin Coconut Oil&quot;</bucket>
+              <bucket>&quot;Uncured Pepperoni&quot;</bucket>
+              <bucket>&quot;Bicolor Sweet Corn&quot;</bucket>
+              <bucket>&quot;Lemon Dish Liquid&quot;</bucket>
+              <bucket>&quot;Organic Raw Multigreen Kobmbucha&quot;</bucket>
+              <bucket>&quot;Organic Strawberry Fruit Spread&quot;</bucket>
+              <bucket>&quot;Wheat English Muffins&quot;</bucket>
+              <bucket>&quot;4 Seasons Pepper Corns Mill Spices&quot;</bucket>
+              <bucket>&quot;Family Size Cookie Pack&quot;</bucket>
+              <bucket>&quot;Organic Wheat Grass Powder&quot;</bucket>
+              <bucket>&quot;Slow Churned Ice Cream, Peanut Butter Cup, Light&quot;</bucket>
+              <bucket>&quot;Feta Cheese Crumbles&quot;</bucket>
+              <bucket>&quot;Natural Cane Turbinado Sugar&quot;</bucket>
+              <bucket>&quot;Raw Walnuts&quot;</bucket>
+              <bucket>&quot;Uncrustables Peanut Butter &amp; Strawberry Spread Sandwich&quot;</bucket>
+              <bucket>&quot;Italian Sausage&quot;</bucket>
+              <bucket>&quot;No Pulp Calcium &amp; Vitamin D Pure Orange Juice&quot;</bucket>
+              <bucket>&quot;Onion Bagels&quot;</bucket>
+              <bucket>&quot;Organic Unsweetened Original Rice Drink&quot;</bucket>
+              <bucket>&quot;Zero Soda&quot;</bucket>
+              <bucket>&quot;Grilled &amp; Ready Oven Roasted Diced Chicken Breast&quot;</bucket>
+              <bucket>&quot;Dha Omega 3 Reduced Fat 2\% Milk&quot;</bucket>
+              <bucket>&quot;Protection Shampoo for Color Treated Hair&quot;</bucket>
+              <bucket>&quot;Thyme&quot;</bucket>
+              <bucket>&quot;Italian Style Smoked Chicken Sausage With Mozzarella Cheese&quot;</bucket>
+              <bucket>&quot;Yellow Corn Tortilla Chips&quot;</bucket>
+              <bucket>&quot;Chicken Base, Organic&quot;</bucket>
+              <bucket>&quot;Penne Rigate&quot;</bucket>
+              <bucket>&quot;Organic Zucchini&quot;</bucket>
+              <bucket>&quot;Fresh Cauliflower&quot;</bucket>
+              <bucket>&quot;Organic Hass Avocado&quot;</bucket>
+              <bucket>&quot;Sesame Seed&quot;</bucket>
+              <bucket>&quot;Farms Thin Sliced Smoked Ham&quot;</bucket>
+              <bucket>&quot;30\% Less Sodium Taco Seasoning Mix&quot;</bucket>
+              <bucket>&quot;Medium Cheddar Cheese Block&quot;</bucket>
+              <bucket>&quot;Sparkling Pomegranate&quot;</bucket>
+              <bucket>&quot;Superior Tonic Water&quot;</bucket>
+              <bucket>&quot;Pineapple&quot;</bucket>
+              <bucket>&quot;Kiwi Strawberry with Electrolytes &amp; Vitamins Water Beverage&quot;</bucket>
+              <bucket>&quot;Original Miracle Whip Dressing&quot;</bucket>
+              <bucket>&quot;Egyptian Licorice Tea Bags&quot;</bucket>
+              <bucket>&quot;100\% Recycled Bathroom Tissue&quot;</bucket>
+              <bucket>&quot;Crispy Chicken Strips 100\% All Natural Fully Cooked&quot;</bucket>
+              <bucket>&quot;Corn Chips&quot;</bucket>
+              <bucket>&quot;Icelandic Style Skyr Blueberry Non-fat Yogurt&quot;</bucket>
+              <bucket>&quot;Vine Ripe Tomatoes&quot;</bucket>
+              <bucket>&quot;Sharp Cheddar Thick Slices Cheese&quot;</bucket>
+              <bucket>&quot;Tapatio Limon&quot;</bucket>
+              <bucket>&quot;Clean Energy Drink, Lemon Lemongrass&quot;</bucket>
+              <bucket>&quot;Rice Cake Sweet Vanilla&quot;</bucket>
+              <bucket>&quot;Meatloaf &amp; Gravy&quot;</bucket>
+              <bucket>&quot;Ice Cream Bars&quot;</bucket>
+              <bucket>&quot;Steak &amp; Roasted Potato Dinner&quot;</bucket>
+              <bucket>&quot;Honey&quot;</bucket>
+              <bucket>&quot;Clementines, Bag&quot;</bucket>
+              <bucket>&quot;Sliced Prosciutto&quot;</bucket>
+              <bucket>&quot;Peanut Butter &amp; Grape Jelly Sandwiches&quot;</bucket>
+              <bucket>&quot;Mountain berry Blast Sports Drink&quot;</bucket>
+              <bucket>&quot;Organic Jalapeno Crackers&quot;</bucket>
+              <bucket>&quot;Vermont White Cheddar Macaroni &amp; Cheese Dinner&quot;</bucket>
+              <bucket>&quot;Organic Salted Butter&quot;</bucket>
+              <bucket>&quot;Orange Soda&quot;</bucket>
+              <bucket>&quot;White Unscented Facial Tissue&quot;</bucket>
+              <bucket>&quot;Plates, 10-1/16 Inch&quot;</bucket>
+              <bucket>&quot;Organic Chia Seeds&quot;</bucket>
+              <bucket>&quot;Green Cabbage&quot;</bucket>
+              <bucket>&quot;French Vanilla Liquid Coffee Creamer&quot;</bucket>
+              <bucket>&quot;Kombucha, Organic Raw, Citrus&quot;</bucket>
+              <bucket>&quot;Oven Roasted Turkey&quot;</bucket>
+              <bucket>&quot;Organic Cucumber&quot;</bucket>
+              <bucket>&quot;Organic Rice Vinegar&quot;</bucket>
+              <bucket>&quot;Blueberries&quot;</bucket>
+              <bucket>&quot;Organic Cultured Cream Cheese Spread&quot;</bucket>
+              <bucket>&quot;All Natural No Stir Creamy Almond Butter&quot;</bucket>
+              <bucket>&quot;Vanilla Frosting&quot;</bucket>
+              <bucket>&quot;India Pale Ale&quot;</bucket>
+              <bucket>&quot;Low fat Chocolate Milk&quot;</bucket>
+              <bucket>&quot;Passion Fruit&quot;</bucket>
+              <bucket>&quot;Gluten Free Classic Hotdog Buns&quot;</bucket>
+              <bucket>&quot;Coconut Water&quot;</bucket>
+              <bucket>&quot;Spicy Mango With Jalape√±o Smoked Chicken Sausage&quot;</bucket>
+              <bucket>&quot;All Natural Roasted Garlic Pasta Sauce&quot;</bucket>
+              <bucket>&quot;Sweet Cream Salted Butter&quot;</bucket>
+              <bucket>&quot;Cinnamon Apple Sauce&quot;</bucket>
+              <bucket>&quot;Seasoned Croutons&quot;</bucket>
+              <bucket>&quot;Harvest Peach Yogurt&quot;</bucket>
+              <bucket>&quot;Plastic Cup Squared Base - 30 CT&quot;</bucket>
+              <bucket>&quot;Plantain Chips&quot;</bucket>
+              <bucket>&quot;Vanilla Unsweetened Almond Milk&quot;</bucket>
+              <bucket>&quot;3 Ply White Tissues Go Packs&quot;</bucket>
+              <bucket>&quot;Organic Light Brown Sugar&quot;</bucket>
+              <bucket>&quot;Original Key Lime Pie Yogurt&quot;</bucket>
+              <bucket>&quot;Ranch Salad Dressing&quot;</bucket>
+              <bucket>&quot;I Heart Baby Kale&quot;</bucket>
+              <bucket>&quot;Organic Beef Hot Dogs&quot;</bucket>
+              <bucket>&quot;Dairy Free Gluten Free Cheeze Lover&apos;s Pizza&quot;</bucket>
+              <bucket>&quot;Shredded Mozzarella Cheese&quot;</bucket>
+              <bucket>&quot;Maximum Strength 150mg Tablets Acid Reducer&quot;</bucket>
+              <bucket>&quot;Peanut Butter Dark Chocolate Protein Chewy Bars&quot;</bucket>
+              <bucket>&quot;Euro Classic Brioche Hot Dog Buns&quot;</bucket>
+              <bucket>&quot;Organic Pure Lime Juice&quot;</bucket>
+              <bucket>&quot;Pepper Greens&quot;</bucket>
+              <bucket>&quot;Organic Shredded Carrots&quot;</bucket>
+              <bucket>&quot;Hot Buffalo Wing Pretzels Pieces&quot;</bucket>
+              <bucket>&quot;Italian Style Wrap&quot;</bucket>
+              <bucket>&quot;100\% Juice Apple Juice&quot;</bucket>
+              <bucket>&quot;Honey Barbecue Sauce&quot;</bucket>
+              <bucket>&quot;Sweet Pea and Violet Body Wash&quot;</bucket>
+              <bucket>&quot;Lager Beer&quot;</bucket>
+              <bucket>&quot;Organic Tomato Paste&quot;</bucket>
+              <bucket>&quot;Gold?! Ice Cream Bars&quot;</bucket>
+              <bucket>&quot;Cherry Preserves&quot;</bucket>
+              <bucket>&quot;Chocolate Ice Cream&quot;</bucket>
+              <bucket>&quot;Pepperjack Style Shreds&quot;</bucket>
+              <bucket>&quot;Basil Pesto&quot;</bucket>
+              <bucket>&quot;Shredded Hash Browns&quot;</bucket>
+              <bucket>&quot;Original Flavor Instant Oatmeal&quot;</bucket>
+              <bucket>&quot;Organic Pack Peasant Bread&quot;</bucket>
+              <bucket>&quot;Premium Deli Honey Ham&quot;</bucket>
+              <bucket>&quot;Chicken Corn Chowder Soup&quot;</bucket>
+              <bucket>&quot;Strained Non-Fat Strawberry Icelandic Style Skyr Yogurt&quot;</bucket>
+              <bucket>&quot;Chicken &amp; Apple Smoked Chicken Sausage&quot;</bucket>
+              <bucket>&quot;Chopped Tomatoes&quot;</bucket>
+              <bucket>&quot;Fettuccini with Chicken Broccoli&quot;</bucket>
+              <bucket>&quot;Light Creamy Swiss Cheese&quot;</bucket>
+              <bucket>&quot;Tea, Organic, Egyptian Licorice Mint, Caffeine Free, Bags&quot;</bucket>
+              <bucket>&quot;Romaine Hearts&quot;</bucket>
+              <bucket>&quot;Organic Cilantro&quot;</bucket>
+              <bucket>&quot;Organic Yukon Gold Potato&quot;</bucket>
+              <bucket>&quot;NyQuil Cold &amp; Flu Nighttime Relief LiquiCaps&quot;</bucket>
+              <bucket>&quot;Unsalted Cultured Butter&quot;</bucket>
+              <bucket>&quot;Part Skim Ricotta Cheese&quot;</bucket>
+              <bucket>&quot;Bread, Double Fiber&quot;</bucket>
+              <bucket>&quot;Organic Garbanzo Beans&quot;</bucket>
+              <bucket>&quot;Crispy Crust Pepperoni Pizza&quot;</bucket>
+              <bucket>&quot;Sliced Genoa Salami&quot;</bucket>
+              <bucket>&quot;Dairy Free Coconut Almondmilk Blend&quot;</bucket>
+              <bucket>&quot;Strained Tomatoes&quot;</bucket>
+              <bucket>&quot;Strawberry Orange Banana Drink Mix&quot;</bucket>
+              <bucket>&quot;Fruit Juicy Red Juice Drink&quot;</bucket>
+              <bucket>&quot;Original Hummus&quot;</bucket>
+              <bucket>&quot;Potato Chips Cheddar &amp; Sour Cream Flavored Party Size!&quot;</bucket>
+              <bucket>&quot;Cheesy Chicken and Broccoli Rice&quot;</bucket>
+              <bucket>&quot;Banana Dippers Banana Slices&quot;</bucket>
+              <bucket>&quot;Multivitamin/Multimineral Supplement Tablets for Women&quot;</bucket>
+              <bucket>&quot;Tomatoes, Whole Peeled&quot;</bucket>
+              <bucket>&quot;Canola Oil&quot;</bucket>
+              <bucket>&quot;D3 1000 Iu Softgels&quot;</bucket>
+              <bucket>&quot;Lavender 100\% Pure Essential Oil Calming&quot;</bucket>
+              <bucket>&quot;Lemon Garlic Turkey Jerky&quot;</bucket>
+              <bucket>&quot;Rhubarb&quot;</bucket>
+              <bucket>&quot;Provolone Slices&quot;</bucket>
+              <bucket>&quot;Cola&quot;</bucket>
+              <bucket>&quot;Unsweetened Carob Chips&quot;</bucket>
+              <bucket>&quot;Deli Fresh Smoked Ham, 97\% Fat Free, Gluten Free&quot;</bucket>
+              <bucket>&quot;Low Carb Whole Wheat Tortillas&quot;</bucket>
+              <bucket>&quot;White Vanilla Bean Ice Cream Dipped in White Chocolate&quot;</bucket>
+              <bucket>&quot;Crackers, Crispy, Cheddar&quot;</bucket>
+              <bucket>&quot;Extra-Dry Cava&quot;</bucket>
+              <bucket>&quot;Organic Leek&quot;</bucket>
+              <bucket>&quot;Akoma Extra Semisweet Chocolate Chips&quot;</bucket>
+              <bucket>&quot;Dha Omega 3 Vitamin D Milk&quot;</bucket>
+              <bucket>&quot;Apricot Preserves&quot;</bucket>
+              <bucket>&quot;Ricotta &amp; Lobster Ravioli Classic Meal for 2&quot;</bucket>
+              <bucket>&quot;Guava Goddess Organic Kambucha&quot;</bucket>
+              <bucket>&quot;Vegan Buttery Sticks&quot;</bucket>
+              <bucket>&quot;100\% Whole Wheat Bread&quot;</bucket>
+              <bucket>&quot;Water Beverage with Vitamins Black Cherry Flavor&quot;</bucket>
+              <bucket>&quot;Pineapple Strawberry Naturally Essenced Sparkling Water&quot;</bucket>
+              <bucket>&quot;Pomegranate&quot;</bucket>
+              <bucket>&quot;Organic Half Tea &amp; Half Lemonade&quot;</bucket>
+              <bucket>&quot;Steamers Broccoli &amp; Cheese Sauce&quot;</bucket>
+              <bucket>&quot;Original Rotisserie Chicken&quot;</bucket>
+              <bucket>&quot;Passionberry Bliss Kombucha Drink&quot;</bucket>
+              <bucket>&quot;Prepared Cheese Product Slices&quot;</bucket>
+              <bucket>&quot;That&apos;s My Jam‚Ñ¢ Core Ice Cream&quot;</bucket>
+              <bucket>&quot;Organic Reduced Fat Milk&quot;</bucket>
+              <bucket>&quot;Tilapia Filet&quot;</bucket>
+              <bucket>&quot;Sour Cream&quot;</bucket>
+              <bucket>&quot;Sesame Chicken&quot;</bucket>
+              <bucket>&quot;Organic Black Bean Rotini Pasta&quot;</bucket>
+              <bucket>&quot;Regular&quot;</bucket>
+              <bucket>&quot;Detox &amp; Digest Green Superfood&quot;</bucket>
+              <bucket>&quot;American Cheese Slices 12 Count&quot;</bucket>
+              <bucket>&quot;The \\\&quot;World&apos;s Best\\\&quot; Veggie Burger&quot;</bucket>
+              <bucket>&quot;Beer Brats Sausage&quot;</bucket>
+              <bucket>&quot;Shredded Sharp Cheddar Cheese&quot;</bucket>
+              <bucket>&quot;Original Rice Krispies Treats&quot;</bucket>
+              <bucket>&quot;Nonfat Icelandic Style Strawberry Yogurt&quot;</bucket>
+              <bucket>&quot;Dry Roasted Almonds&quot;</bucket>
+              <bucket>&quot;Organic Thompson Seedless Raisins&quot;</bucket>
+              <bucket>&quot;Grain Free Chicken Formula Cat Food&quot;</bucket>
+              <bucket>&quot;Grain Free Turkey &amp; Salmon Formula Cat Food&quot;</bucket>
+              <bucket>&quot;Crunchy Oats &apos;n Honey Granola Bars&quot;</bucket>
+              <bucket>&quot;Enlightened Organic Raw Kombucha&quot;</bucket>
+              <bucket>&quot;Lactose Free 2\% Reduced Fat Milk&quot;</bucket>
+              <bucket>&quot;Organic Peeled Whole Baby Carrots&quot;</bucket>
+              <bucket>&quot;Dark Choc. Rice Cakes&quot;</bucket>
+              <bucket>&quot;Coconut Oil Popcorn&quot;</bucket>
+              <bucket>&quot;Large Lemon&quot;</bucket>
+              <bucket>&quot;Organic Heavy Whipping Cream&quot;</bucket>
+              <bucket>&quot;Grilled &amp; Ready Chicken Breast Strips&quot;</bucket>
+              <bucket>&quot;Original Beef Jerky&quot;</bucket>
+              <bucket>&quot;49 Flavors Jelly Belly Jelly Beans&quot;</bucket>
+              <bucket>&quot;Boomchickapop Sweet &amp; Salty Kettle Corn&quot;</bucket>
+              <bucket>&quot;Naturally Hickory Smoked Thick Cut Bacon&quot;</bucket>
+              <bucket>&quot;100\% Recycled 2 Ply Jumbo Paper Towel Roll&quot;</bucket>
+              <bucket>&quot;Cage Free Grade A Large Brown Eggs&quot;</bucket>
+              <bucket>&quot;Lemon with Electrolytes &amp; Vitamins Water Beverage&quot;</bucket>
+              <bucket>&quot;Large Alfresco Eggs&quot;</bucket>
+              <bucket>&quot;Bold &amp; Crispy Zesties! Crispy Seasoned French Fried Potatoes&quot;</bucket>
+              <bucket>&quot;Reduced Fat Milk 100\% Lactose Free&quot;</bucket>
+              <bucket>&quot;Trail Mix&quot;</bucket>
+              <bucket>&quot;Dried Mangos&quot;</bucket>
+              <bucket>&quot;Heavy Cream&quot;</bucket>
+              <bucket>&quot;Organic Lightly Salted Brown Rice Cakes&quot;</bucket>
+              <bucket>&quot;Tonic Water&quot;</bucket>
+              <bucket>&quot;Chicken Canned Kitten Food&quot;</bucket>
+              <bucket>&quot;Peanut Butter Crunch Cereal&quot;</bucket>
+              <bucket>&quot;Organic Raisin Bran Cereal&quot;</bucket>
+              <bucket>&quot;Sprouted Grain Bread Cinnamon Raisin&quot;</bucket>
+              <bucket>&quot;Roasted Garlic Alfredo Pasta Sauce&quot;</bucket>
+              <bucket>&quot;Frozen Organic Strawberries&quot;</bucket>
+              <bucket>&quot;Organic Red Radish, Bunch&quot;</bucket>
+              <bucket>&quot;Crunchy Oats N&apos; Honey Granola Bars&quot;</bucket>
+              <bucket>&quot;Nacho Sliced Jalapenos&quot;</bucket>
+              <bucket>&quot;Vegan Aged White Cheddar  Popcorn&quot;</bucket>
+              <bucket>&quot;Organic Acacia Fiber&quot;</bucket>
+              <bucket>&quot;Diced Pears In Light Syrup Fruit Cups&quot;</bucket>
+              <bucket>&quot;Moisturizing Conditioner Aloe Vera + Macadamia Oil&quot;</bucket>
+              <bucket>&quot;Italian Dry Salame&quot;</bucket>
+              <bucket>&quot;Chunky Tomato Garlic &amp; Onion Pasta Sauce&quot;</bucket>
+              <bucket>&quot;Organic &amp; Raw Grape Kombucha&quot;</bucket>
+              <bucket>&quot;Organic Whole String Cheese&quot;</bucket>
+              <bucket>&quot;Organic Unsweetened Plain Soymilk&quot;</bucket>
+              <bucket>&quot;Heart to Heart Honey Toasted Oat Cereal&quot;</bucket>
+              <bucket>&quot;White Paper Towels, Regular Roll&quot;</bucket>
+              <bucket>&quot;Mixed Berry Yogurt&quot;</bucket>
+              <bucket>&quot;Whipped Cream Cheese&quot;</bucket>
+              <bucket>&quot;Unbleached Bread Flour&quot;</bucket>
+              <bucket>&quot;Flake Style Imitation Crab&quot;</bucket>
+              <bucket>&quot;Sea Salt Flakes Original&quot;</bucket>
+              <bucket>&quot;100\% Recycled Paper Towels&quot;</bucket>
+              <bucket>&quot;Original Coconut Milk Beverage&quot;</bucket>
+              <bucket>&quot;Sliced Tamed Jalapeno Peppers&quot;</bucket>
+              <bucket>&quot;Dairy Free Gluten Free Mushroom &amp; Roasted Garlic Pizza&quot;</bucket>
+              <bucket>&quot;Mini Double Caramel Ice Cream Bars&quot;</bucket>
+              <bucket>&quot;Classic Yellow Mustard&quot;</bucket>
+              <bucket>&quot;Ale, India Pale, Brew Free! Or Die IPA&quot;</bucket>
+              <bucket>&quot;Organic 2\% Reduced Fat Milk&quot;</bucket>
+              <bucket>&quot;Extra Virgin Olive Oil&quot;</bucket>
+              <bucket>&quot;Peanut Butter Creamy With Salt&quot;</bucket>
+              <bucket>&quot;Kickstart Energizing Orange Citrus Sparkling Juice Beverage&quot;</bucket>
+              <bucket>&quot;Coke Classic&quot;</bucket>
+              <bucket>&quot;Fat Free Italian Salad Dressing&quot;</bucket>
+              <bucket>&quot;Original Veggie Straws&quot;</bucket>
+              <bucket>&quot;Coconut Milk Non Dairy Frozen Dessert No Sugar Added Mint Chip&quot;</bucket>
+              <bucket>&quot;Hickory &amp; Brown Sugar Barbecue Sauce&quot;</bucket>
+              <bucket>&quot;Celery Sticks&quot;</bucket>
+              <bucket>&quot;Vanilla Coke&quot;</bucket>
+              <bucket>&quot;Original Cherry Orchard Yogurt&quot;</bucket>
+              <bucket>&quot;Teriyaki Beef Jerky&quot;</bucket>
+              <bucket>&quot;Chunky Classic Chicken Noodle Soup&quot;</bucket>
+              <bucket>&quot;Fettuccine Pasta&quot;</bucket>
+              <bucket>&quot;Extra Dark Chocolate Baking Chips&quot;</bucket>
+              <bucket>&quot;Roast Beef&quot;</bucket>
+              <bucket>&quot;Coarse Kosher Salt&quot;</bucket>
+              <bucket>&quot;Macaroni &amp; Cheese&quot;</bucket>
+              <bucket>&quot;Vanilla Ice Cream&quot;</bucket>
+              <bucket>&quot;Classics Meat Lovers Lasagna&quot;</bucket>
+              <bucket>&quot;Organic Large Extra Fancy Fuji Apple&quot;</bucket>
+              <bucket>&quot;Moisture Milks Strawberries &amp; Cream Moisturizing Conditioner&quot;</bucket>
+              <bucket>&quot;Chocolate Peanut Butter Creme Sandwich Cookies&quot;</bucket>
+              <bucket>&quot;Classic Meal For 2 Shrimp Scampi &amp; Linguine&quot;</bucket>
+              <bucket>&quot;Freshly made pasta in a 100\% Real Cheddar cheese sauce Macaroni &amp; Cheese&quot;</bucket>
+              <bucket>&quot;Shredded Mild Cheddar Cheese&quot;</bucket>
+              <bucket>&quot;Squeeze Tomato Ketchup&quot;</bucket>
+              <bucket>&quot;Condensed Cream of Chicken Soup&quot;</bucket>
+              <bucket>&quot;Bread &amp; Butter Pickle Chips&quot;</bucket>
+              <bucket>&quot;Tortellini Primavera Parmesan Cafe Steamers&quot;</bucket>
+              <bucket>&quot;Smart Creations Crustless Chicken Pot Pie&quot;</bucket>
+              <bucket>&quot;Smoked Chicken &amp; Apple Mini Sausages&quot;</bucket>
+              <bucket>&quot;Grain Free Turkey Formula Cat Food&quot;</bucket>
+              <bucket>&quot;Revitalizing with Vitamin E Body Lotion&quot;</bucket>
+              <bucket>&quot;PlusShot Blueberry Acai Probiotic Juice Drink&quot;</bucket>
+              <bucket>&quot;Spicy Chili Seasoning&quot;</bucket>
+              <bucket>&quot;Organic &amp; Raw Strawberry Serenity Kombucha&quot;</bucket>
+              <bucket>&quot;Red Onion&quot;</bucket>
+              <bucket>&quot;Shallot&quot;</bucket>
+              <bucket>&quot;Cane Sugar&quot;</bucket>
+              <bucket>&quot;Chopped Garlic&quot;</bucket>
+              <bucket>&quot;Enchilada Black Bean Vegetable&quot;</bucket>
+              <bucket>&quot;Almond Meal/Flour&quot;</bucket>
+              <bucket>&quot;Peanut Butter &amp; Strawberry Jam Sandwich&quot;</bucket>
+              <bucket>&quot;Everyone Lavender + Aloe Soap&quot;</bucket>
+              <bucket>&quot;New Orleans Iced Coffee&quot;</bucket>
+              <bucket>&quot;Berry Workout Water&quot;</bucket>
+              <bucket>&quot;Millennium Organic Cherry Chia Synergy Kombucha&quot;</bucket>
+              <bucket>&quot;Organic  Creamy Peanut Butter Hint of Sea Salt&quot;</bucket>
+              <bucket>&quot;Sea Salt &amp; Vinegar Potato Chips&quot;</bucket>
+              <bucket>&quot;Low Moisture Part Skim Mozzarella String Cheese&quot;</bucket>
+              <bucket>&quot;Almond Milk Blueberry Yogurt&quot;</bucket>
+              <bucket>&quot;Gluten Free French Baguettes&quot;</bucket>
+              <bucket>&quot;Chicken Pot Pie&quot;</bucket>
+              <bucket>&quot;Cream Top Smooth &amp; Creamy Vanilla Yogurt&quot;</bucket>
+              <bucket>&quot;Swedish Meatballs&quot;</bucket>
+              <bucket>&quot;No Pulp Orange Juice&quot;</bucket>
+              <bucket>&quot;Everyday Paper Plates&quot;</bucket>
+              <bucket>&quot;Complete‚Ñ¢ ActionPacs‚Ñ¢ Fresh Scent Dishwasher Detergent&quot;</bucket>
+              <bucket>&quot;Organic Rainbow Carrots&quot;</bucket>
+              <bucket>&quot;Italian Sparkling Mineral Water&quot;</bucket>
+              <bucket>&quot;Spicy Avocado Hummus&quot;</bucket>
+              <bucket>&quot;Organic Whole Wheat Sourdough Bread&quot;</bucket>
+              <bucket>&quot;Iceberg Garden Salad Blend&quot;</bucket>
+              <bucket>&quot;Sweet Onion&quot;</bucket>
+              <bucket>&quot;French Bread Pizza Pepperoni&quot;</bucket>
+              <bucket>&quot;Organic Unsweetened Vanilla Coconut Non-Dairy Beverage&quot;</bucket>
+              <bucket>&quot;Grade AA Large White Eggs&quot;</bucket>
+              <bucket>&quot;100\% Grated Parmesan Cheese&quot;</bucket>
+              <bucket>&quot;Organic Lowfat Milk&quot;</bucket>
+              <bucket>&quot;Cafe Steamer Sweet &amp; Sour Chicken&quot;</bucket>
+              <bucket>&quot;Sharp Cheddar Cheese&quot;</bucket>
+              <bucket>&quot;Mint&quot;</bucket>
+              <bucket>&quot;Popped Corn Just The Cheese Corn&quot;</bucket>
+              <bucket>&quot;Mega Stuf&quot;</bucket>
+              <bucket>&quot;With seasoned meat sauce, tomato sauce &amp; real low fat ricotta cheese Lasagna Italiano&quot;</bucket>
+              <bucket>&quot;Chicken Corn Chowder Pot Pie&quot;</bucket>
+              <bucket>&quot;Double Stuf Oreo Sandwich Cookies&quot;</bucket>
+              <bucket>&quot;Large Grapefruit&quot;</bucket>
+              <bucket>&quot;Mrs Fields Cookie Sandwich Ice Cream&quot;</bucket>
+              <bucket>&quot;Original Strawberry Banana Yogurt&quot;</bucket>
+              <bucket>&quot;Raisin Bran Crunch Cereal&quot;</bucket>
+              <bucket>&quot;Salisbury Steak Dinner&quot;</bucket>
+              <bucket>&quot;Roasted Pine Nut Hummus&quot;</bucket>
+              <bucket>&quot;Uncrustables Peanut Butter &amp; Grape Jelly Sandwich&quot;</bucket>
+              <bucket>&quot;Synergy Organic &amp; Raw Cosmic Cranberry&quot;</bucket>
+              <bucket>&quot;High Quality Glutamine Powder&quot;</bucket>
+              <bucket>&quot;Pure &amp; Natural Sour Cream&quot;</bucket>
+              <bucket>&quot;Half Baked¬Æ Ice Cream&quot;</bucket>
+              <bucket>&quot;Organic Traditional 9\\\&quot; Pie Shells 2 ct&quot;</bucket>
+              <bucket>&quot;Smoked Turkey Breast&quot;</bucket>
+              <bucket>&quot;Bag of Organic Bananas&quot;</bucket>
+              <bucket>&quot;Banana&quot;</bucket>
+              <bucket>&quot;Broccoli Crown&quot;</bucket>
+              <bucket>&quot;Brussels Sprouts&quot;</bucket>
+              <bucket>&quot;Crinkle Cut French Fries&quot;</bucket>
+              <bucket>&quot;Crunchy Almond Butter&quot;</bucket>
+              <bucket>&quot;Cucumber Kirby&quot;</bucket>
+              <bucket>&quot;Diced Tomatoes&quot;</bucket>
+              <bucket>&quot;Diet&quot;</bucket>
+              <bucket>&quot;Dried Sweetened Cranberries&quot;</bucket>
+              <bucket>&quot;Grated Parmesan&quot;</bucket>
+              <bucket>&quot;Green Beans&quot;</bucket>
+              <bucket>&quot;Half &amp; Half&quot;</bucket>
+              <bucket>&quot;Heavy Whipping Cream&quot;</bucket>
+              <bucket>&quot;Hot Dog Buns&quot;</bucket>
+              <bucket>&quot;Italian Extra Virgin Olive Oil&quot;</bucket>
+              <bucket>&quot;Lemonade&quot;</bucket>
+              <bucket>&quot;Limes&quot;</bucket>
+              <bucket>&quot;Lucky Charms Cereal&quot;</bucket>
+              <bucket>&quot;Michigan Organic Kale&quot;</bucket>
+              <bucket>&quot;Organic Avocado&quot;</bucket>
+              <bucket>&quot;Organic Baby Arugula&quot;</bucket>
+              <bucket>&quot;Organic Baby Carrots&quot;</bucket>
+              <bucket>&quot;Organic Baby Spinach&quot;</bucket>
+              <bucket>&quot;Organic Cane Sugar&quot;</bucket>
+              <bucket>&quot;Organic Coconut Milk&quot;</bucket>
+              <bucket>&quot;Organic Gala Apples&quot;</bucket>
+              <bucket>&quot;Organic Garlic&quot;</bucket>
+              <bucket>&quot;Organic Ginger Root&quot;</bucket>
+              <bucket>&quot;Organic Grape Tomatoes&quot;</bucket>
+              <bucket>&quot;Organic Mango Chunks&quot;</bucket>
+              <bucket>&quot;Organic Premium Tomato Paste&quot;</bucket>
+              <bucket>&quot;Organic Red Onion&quot;</bucket>
+              <bucket>&quot;Organic Spring Mix&quot;</bucket>
+              <bucket>&quot;Organic Strawberries&quot;</bucket>
+              <bucket>&quot;Organic Yellow Onion&quot;</bucket>
+              <bucket>&quot;Pure Sparkling Water&quot;</bucket>
+              <bucket>&quot;Rich &amp; Hearty New England Clam Chowder Soup&quot;</bucket>
+              <bucket>&quot;Sea Salt Caramel Gelato&quot;</bucket>
+              <bucket>&quot;Singles American Cheese Slices&quot;</bucket>
+              <bucket>&quot;Smoked Paprika&quot;</bucket>
+              <bucket>&quot;Soda&quot;</bucket>
+              <bucket>&quot;Sriracha Chili Sauce&quot;</bucket>
+              <bucket>&quot;Super Spinach! Baby Spinach, Baby Bok Choy, Sweet Baby Kale&quot;</bucket>
+              <bucket>&quot;Tomato Paste&quot;</bucket>
+              <bucket>&quot;Unsalted Butter&quot;</bucket>
+              <bucket>&quot;Unsweetened Original Almond Breeze Almond Milk&quot;</bucket>
+              <bucket>&quot;Organic Roasted Turkey Breast&quot;</bucket>
+              <bucket>&quot;Turkey Pot Pie&quot;</bucket>
+              <bucket>&quot;Sparkling Water Grapefruit&quot;</bucket>
+              <bucket>&quot;Unsweetened Blackberry Water&quot;</bucket>
+              <bucket>&quot;Club Soda&quot;</bucket>
+              <bucket>&quot;Freshly made pasta layered between a rich meat sauce and topped with Real Mozzarella cheese Lasagna with Meat &amp; Sauce&quot;</bucket>
+              <bucket>&quot;California Lemonade&quot;</bucket>
+              <bucket>&quot;Vanilla Skyr Nonfat Yogurt&quot;</bucket>
+              <bucket>&quot;Organic Whole Grain Wheat English Muffins&quot;</bucket>
+              <bucket>&quot;Sweet Sliced Bread&quot;</bucket>
+              <bucket>&quot;100\% Guava Juice&quot;</bucket>
+              <bucket>&quot;Bartlett Pears&quot;</bucket>
+              <bucket>&quot;Corn Meal Pizza Crust&quot;</bucket>
+              <bucket>&quot;Frozen Blueberries&quot;</bucket>
+              <bucket>&quot;Organic Romaine&quot;</bucket>
+              <bucket>&quot;Premium  Vanilla Mochi Ice Cream&quot;</bucket>
+              <bucket>&quot;Shredded Parmesan&quot;</bucket>
+              <bucket>&quot;Sliced Baby Bella Mushrooms&quot;</bucket>
+              <bucket>&quot;Lime Sparkling Water&quot;</bucket>
+              <bucket>&quot;Organic Extra Firm Tofu&quot;</bucket>
+              <bucket>&quot;Sweet Mini Sub Rolls&quot;</bucket>
+              <bucket>&quot;The Original Five Cheese Texas Toast&quot;</bucket>
+              <bucket>&quot;Globe Eggplant&quot;</bucket>
+              <bucket>&quot;Nacho Cheese Tortilla Chips&quot;</bucket>
+              <bucket>&quot;Hummus&quot;</bucket>
+              <bucket>&quot;Black Beans&quot;</bucket>
+              <bucket>&quot;Bunny-Luv Fresh Organic Carrots&quot;</bucket>
+              <bucket>&quot;Kosher Whole Dill Pickles&quot;</bucket>
+              <bucket>&quot;Natural Shiitake Sesame Vinaigrette Dressing&quot;</bucket>
+              <bucket>&quot;Reserve Cheddar Cheese&quot;</bucket>
+              <bucket>&quot;Organic Lacinato (Dinosaur) Kale&quot;</bucket>
+              <bucket>&quot;Original Orange Juice&quot;</bucket>
+              <bucket>&quot;Skim Milk&quot;</bucket>
+              <bucket>&quot;Coke Zero Diet Soda&quot;</bucket>
+              <bucket>&quot;Grands! Big &amp; Flaky Crescent Rolls&quot;</bucket>
+              <bucket>&quot;Diet Caffeine Free Naturally Flavored Lemon Lime Soda&quot;</bucket>
+              <bucket>&quot;Organic Garnet Sweet Potato (Yam)&quot;</bucket>
+              <bucket>&quot;Sliced Blueberry Bagels&quot;</bucket>
+              <bucket>&quot;Almonds &amp; Sea Salt in Dark Chocolate&quot;</bucket>
+              <bucket>&quot;Light &amp; Lean Spaghetti Italiano with Meatless Meatballs&quot;</bucket>
+              <bucket>&quot;Chicken &amp; Apple Breakfast Links&quot;</bucket>
+              <bucket>&quot;Teriyaki &amp; Pineapple Chicken Meatballs&quot;</bucket>
+              <bucket>&quot;Yogurt Pretzels&quot;</bucket>
+              <bucket>&quot;Sparkling Cranberry Juice&quot;</bucket>
+              <bucket>&quot;Cherubs Heavenly Salad Tomatoes&quot;</bucket>
+              <bucket>&quot;Frosted Mini-Wheats Original Cereal&quot;</bucket>
+              <bucket>&quot;Clean Energy Zero Lime&quot;</bucket>
+              <bucket>&quot;Guava Guayasa Zero&quot;</bucket>
+              <bucket>&quot;Honey Greek Yogurt&quot;</bucket>
+              <bucket>&quot;Organic Honey Green Tea Drink&quot;</bucket>
+              <bucket>&quot;Trilogy Kombucha Drink&quot;</bucket>
+              <bucket>&quot;Organic Mandarins&quot;</bucket>
+              <bucket>&quot;Steak &amp; Cheddar Crispy Buttery Seasoned Crust Stuffed Sandwiches&quot;</bucket>
+              <bucket>&quot;Wheat Gluten Free Waffles&quot;</bucket>
+              <bucket>&quot;Ham &amp; Cheese Sandwiches&quot;</bucket>
+              <bucket>&quot;Bunny Pasta with Yummy Cheese Macaroni &amp; Cheese&quot;</bucket>
+              <bucket>&quot;Canned Aranciata Orange&quot;</bucket>
+              <bucket>&quot;Ion4 Strawberry Lemonade Sports Drink&quot;</bucket>
+              <bucket>&quot;Organic Lemon&quot;</bucket>
+              <bucket>&quot;Natural Sharp Cheddar Sliced Cheese&quot;</bucket>
+              <bucket>&quot;Automatic Dishwasher Tablets Citrus - 25 CT&quot;</bucket>
+              <bucket>&quot;Original Velveeta Cheese&quot;</bucket>
+              <bucket>&quot;Rich &amp; Hearty Creamy Roasted Chicken Wild Rice Soup&quot;</bucket>
+              <bucket>&quot;Super Soft Flour Tortillas&quot;</bucket>
+              <bucket>&quot;Vegetable Classics Garden Vegetable Soup&quot;</bucket>
+              <bucket>&quot;Sour Cream &amp; Onion Flavored Potato Crisps&quot;</bucket>
+              <bucket>&quot;Garlic&quot;</bucket>
+              <bucket>&quot;Mandarin Orange in 100\% Fruit Juice&quot;</bucket>
+              <bucket>&quot;Gluten Free Classic Hamburger Buns&quot;</bucket>
+              <bucket>&quot;Original Whipped Cream Cheese&quot;</bucket>
+              <bucket>&quot;Gluten Free Old Fashioned Rolled Oats&quot;</bucket>
+              <bucket>&quot;Butternut Squash&quot;</bucket>
+              <bucket>&quot;Organic Whole Peeled Tomatoes&quot;</bucket>
+              <bucket>&quot;Natural Free &amp; Clear Dishwasher Detergent Packs&quot;</bucket>
+              <bucket>&quot;Chocolate Hazelnut Butter Blend&quot;</bucket>
+              <bucket>&quot;Dutch Cocoa Flavor Crunchy Nuggets&quot;</bucket>
+              <bucket>&quot;Chocolate Chip Bunny Grahams Whole Grain Graham Snacks Bunny Grahams&quot;</bucket>
+              <bucket>&quot;Outshine Lime Fruit Bars&quot;</bucket>
+              <bucket>&quot;Organic Fuji Apple&quot;</bucket>
+              <bucket>&quot;Cobb Salad&quot;</bucket>
+              <bucket>&quot;Chicken Meatballs Spicy Mango &amp; Jalapeno&quot;</bucket>
+              <bucket>&quot;Chocolate Peanut Butter Cup Gelato&quot;</bucket>
+              <bucket>&quot;Drumstick Variety Pack Frozen Dairy Dessert Cones&quot;</bucket>
+              <bucket>&quot;Low Fat Split Pea Soup&quot;</bucket>
+              <bucket>&quot;Regular Pork Sausage Tube&quot;</bucket>
+              <bucket>&quot;Breakfast Links Maple &amp; Smoked Bacon Smoked Chicken Sausage&quot;</bucket>
+              <bucket>&quot;Unsweetened Premium Iced Tea&quot;</bucket>
+              <bucket>&quot;China Green Tips Green Tea&quot;</bucket>
+              <bucket>&quot;Franks&quot;</bucket>
+              <bucket>&quot;Organic Teas Black Tea Organic English Breakfast Tea Bags - 16 CT&quot;</bucket>
+              <bucket>&quot;Pink Lemonade Drink Mix&quot;</bucket>
+              <bucket>&quot;Mini Corn Dogs&quot;</bucket>
+              <bucket>&quot;Clearing Eucalyptus Mineral Bath&quot;</bucket>
+              <bucket>&quot;Sparkling Pink Lemonade&quot;</bucket>
+              <bucket>&quot;Traditional Clean Energy Drink&quot;</bucket>
+              <bucket>&quot;Vegetable Classics Vegetable Soup&quot;</bucket>
+              <bucket>&quot;Peas &amp; Carrots&quot;</bucket>
+              <bucket>&quot;Creamy French Dressing Salad&quot;</bucket>
+              <bucket>&quot;Party Cutlery Full Size Assorted&quot;</bucket>
+              <bucket>&quot;Honey Ham&quot;</bucket>
+              <bucket>&quot;Organic Whole Cashews&quot;</bucket>
+              <bucket>&quot;Vanilla Skyr Style Yogurt&quot;</bucket>
+              <bucket>&quot;100\% Mango Juice&quot;</bucket>
+              <bucket>&quot;Natural Beef &amp; Chicken Formula Food for Cats&quot;</bucket>
+              <bucket>&quot;Organic Campari Cocktail Tomatoes&quot;</bucket>
+              <bucket>&quot;Private Selection Pinot Noir&quot;</bucket>
+              <bucket>&quot;Sliced Portabella Mushrooms&quot;</bucket>
+              <bucket>&quot;Sprouted Multi-Grain Bread&quot;</bucket>
+              <bucket>&quot;Three Meat &amp; Four Cheese Lasagna&quot;</bucket>
+              <bucket>&quot;Clear Cups&quot;</bucket>
+              <bucket>&quot;Organic Frozen Peas&quot;</bucket>
+              <bucket>&quot;Sparkling Lemon Water&quot;</bucket>
+              <bucket>&quot;Organic Shredded Mozzarella&quot;</bucket>
+              <bucket>&quot;Calabrese uncured italian Salami  with pepper and paprika&quot;</bucket>
+              <bucket>&quot;Naturals Chicken Nuggets&quot;</bucket>
+              <bucket>&quot;80\% Lean Ground Beef&quot;</bucket>
+              <bucket>&quot;Cheeseburger Sliders&quot;</bucket>
+              <bucket>&quot;French Onion Dip&quot;</bucket>
+              <bucket>&quot;Raisin Bran Cereal&quot;</bucket>
+              <bucket>&quot;Red Vine Tomato&quot;</bucket>
+              <bucket>&quot;Cinnamon Rolls with Icing&quot;</bucket>
+              <bucket>&quot;Lemon Sparkling Water&quot;</bucket>
+              <bucket>&quot;Organic Blue Corn Tortilla Chips&quot;</bucket>
+              <bucket>&quot;Eggo Homestyle Waffles&quot;</bucket>
+              <bucket>&quot;Half And Half Ultra Pasteurized&quot;</bucket>
+              <bucket>&quot;Kombucha, Organic Raw, Lavender No. 3&quot;</bucket>
+              <bucket>&quot;Lemon-Lime Fridge Pack Soda&quot;</bucket>
+              <bucket>&quot;Oats &amp; Honey Gluten Free Granola&quot;</bucket>
+              <bucket>&quot;Organic Sliced Crimini Mushrooms&quot;</bucket>
+              <bucket>&quot;Organic Spring Jasmine Green Tea&quot;</bucket>
+              <bucket>&quot;Sea Salt Sourdough Einkorn Crackers&quot;</bucket>
+              <bucket>&quot;Sonoma Handmade Style Corn Tortillas&quot;</bucket>
+              <bucket>&quot;Arancita Rossa&quot;</bucket>
+              <bucket>&quot;Choco Taco&quot;</bucket>
+              <bucket>&quot;Creamy Parmesan Chicken Pot Pie&quot;</bucket>
+              <bucket>&quot;Organic Cheddar Bunnies&quot;</bucket>
+              <bucket>&quot;Original Red Licorice Twists, Tub&quot;</bucket>
+              <bucket>&quot;Pepperoni Pizza Rolls&quot;</bucket>
+              <bucket>&quot;Traditional Chicken Noodle Soup&quot;</bucket>
+              <bucket>&quot;Vegetable Lasagna&quot;</bucket>
+              <bucket>&quot;Walnuts Halves &amp; Pieces Organic&quot;</bucket>
+              <bucket>&quot;Organic Celery Hearts&quot;</bucket>
+              <bucket>&quot;Spinach Veggie Dip&quot;</bucket>
+              <bucket>&quot;Original Pure Creamy Almond Milk&quot;</bucket>
+              <bucket>&quot;100\% Pure Corn Starch&quot;</bucket>
+              <bucket>&quot;Crushed Red Pepper&quot;</bucket>
+              <bucket>&quot;Organic Just Blueberries&quot;</bucket>
+              <bucket>&quot;Vinegar, Apple Cider&quot;</bucket>
+              <bucket>&quot;Balsamic Vinegar Of Modena&quot;</bucket>
+              <bucket>&quot;Breaded Popcorn Turkey Dogs&quot;</bucket>
+              <bucket>&quot;Instant Mashed Potatoes&quot;</bucket>
+              <bucket>&quot;Green Onions&quot;</bucket>
+              <bucket>&quot;Jalapeno Peppers&quot;</bucket>
+              <bucket>&quot;Organic Blackberries&quot;</bucket>
+              <bucket>&quot;Brioche Hot Dog Buns&quot;</bucket>
+              <bucket>&quot;Organic Chives&quot;</bucket>
+              <bucket>&quot;Premium Pure Cane Granulated Sugar&quot;</bucket>
+              <bucket>&quot;Slow Cured Pepper + Garlic Salame Molisana&quot;</bucket>
+              <bucket>&quot;Zero Calorie Tonic Water&quot;</bucket>
+              <bucket>&quot;Cream Top Smooth &amp; Creamy Maple Yogurt&quot;</bucket>
+              <bucket>&quot;Lemon Yogurt&quot;</bucket>
+              <bucket>&quot;Spaghetti&quot;</bucket>
+              <bucket>&quot;Purified Drinking Water&quot;</bucket>
+              <bucket>&quot;Bacon Cheddar Pretzel Pieces&quot;</bucket>
+              <bucket>&quot;Frosted Sugar Cookies&quot;</bucket>
+              <bucket>&quot;Strawberry Cheesecake Ice Cream&quot;</bucket>
+              <bucket>&quot;Tahitian Vanilla Bean Gelato&quot;</bucket>
+              <bucket>&quot;Chicken Flavored Rawhide Chip Dog Bones&quot;</bucket>
+              <bucket>&quot;Green Tea Mochi Ice Cream Bonbons&quot;</bucket>
+              <bucket>&quot;Whole Almonds&quot;</bucket>
+              <bucket>&quot;Orignial Recipe Chocolate Pudding&quot;</bucket>
+              <bucket>&quot;Organic Spring Mix Salad&quot;</bucket>
+              <bucket>&quot;Mediterranean Style Chicken, Rigatoni &amp; Broccooli&quot;</bucket>
+              <bucket>&quot;Lemon-Lime Soda&quot;</bucket>
+              <bucket>&quot;Blasts! Reese&apos;s Peanut Butter Cups Frozen Dairy Dessert&quot;</bucket>
+              <bucket>&quot;Cajun Andouille Smoked Pork Sausage&quot;</bucket>
+              <bucket>&quot;Fresh Vanilla Odor Shield Tall 13 Gallon Drawstring Bags&quot;</bucket>
+              <bucket>&quot;Homestyle Baked Beans&quot;</bucket>
+              <bucket>&quot;3 in 1 Can Opener&quot;</bucket>
+              <bucket>&quot;1200mg Fish Oil&quot;</bucket>
+              <bucket>&quot;Caramel and Peanuts Kandy Bars&quot;</bucket>
+              <bucket>&quot;Eucerin¬Æ Lip Repair Ointment&quot;</bucket>
+              <bucket>&quot;Extra Strength Pain Cream&quot;</bucket>
+              <bucket>&quot;Keratin Smooth Conditioner&quot;</bucket>
+              <bucket>&quot;Miracle Whip Original Squeeze Bottle&quot;</bucket>
+              <bucket>&quot;Roasted &amp; Salted Almonds&quot;</bucket>
+              <bucket>&quot;Roasted Garlic Hummus&quot;</bucket>
+              <bucket>&quot;Creamy Swiss Original Wedges Cheese&quot;</bucket>
+              <bucket>&quot;Variety Pack&quot;</bucket>
+              <bucket>&quot;Savoy Cabbage&quot;</bucket>
+              <bucket>&quot;Golden Oreo Sandwich Cookies&quot;</bucket>
+              <bucket>&quot;Buttermilk Complete Pancake Mix&quot;</bucket>
+              <bucket>&quot;Creamy Mozzarella Sun-Dried Tomato &amp; Basil Flavor Cheese Wedges&quot;</bucket>
+              <bucket>&quot;Creamy Swiss French Onion Wedges Cheese&quot;</bucket>
+              <bucket>&quot;Creamy Swiss Garlic &amp; Herb Spreadable Cheese Wedges&quot;</bucket>
+              <bucket>&quot;Croissant Crust Philly Steak &amp; Cheese&quot;</bucket>
+              <bucket>&quot;Four Cheese Pizza&quot;</bucket>
+              <bucket>&quot;Gherkin Pickles&quot;</bucket>
+              <bucket>&quot;Hardwood Smoked Honey Cured Thick Sliced Bacon&quot;</bucket>
+              <bucket>&quot;Hickory Ham &amp; Cheddar in a Croissant Crust&quot;</bucket>
+              <bucket>&quot;Original Club Crackers&quot;</bucket>
+              <bucket>&quot;Premium Lager Beer&quot;</bucket>
+              <bucket>&quot;Tostadas Caseras Amarillas&quot;</bucket>
+              <bucket>&quot;French Bread Pizza Cheese&quot;</bucket>
+              <bucket>&quot;White Meat Chicken Pot Pie&quot;</bucket>
+              <bucket>&quot;Seedless Small Watermelon&quot;</bucket>
+              <bucket>&quot;Concentrace Trace Mineral Drops&quot;</bucket>
+              <bucket>&quot;Lemon &amp; Lime Blossom Ocean Fresh Scent Disinfecting Wipes&quot;</bucket>
+              <bucket>&quot;Wint-O-Green&quot;</bucket>
+              <bucket>&quot;Raspberry Fruit Spread&quot;</bucket>
+              <bucket>&quot;Salsa Casera&quot;</bucket>
+              <bucket>&quot;Salsa Verde&quot;</bucket>
+              <bucket>&quot;Uncured Beef Hot Dogs&quot;</bucket>
+              <bucket>&quot;Gingerbread Spice Cookies&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:user_id:ok]'>
+            <groupfilter function='member' level='[none:user_id:ok]' member='8225' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:user_id:ok]</column>
+            <column>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_hour_of_day:nk]</column>
+            <column>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[attr:pred:qk]</column>
+            <column>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_dow:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:product_name:nk]' value='53' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:product_name:nk]' value='320' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='799' />
+                <format attr='maxwidth' value='799' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:product_name:nk]</rows>
+        <cols>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[attr:pred:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='184'>
+            <card param='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_dow:ok]' type='filter' />
+            <card param='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:user_id:ok]' type='filter' />
+            <card param='[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_hour_of_day:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_dow:ok]</field>
+            <field>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:order_hour_of_day:nk]</field>
+            <field>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:product_id:ok]</field>
+            <field>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:product_name:nk]</field>
+            <field>[federated.1ov3p9g1cg944h10qf39i1e8lpag].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
