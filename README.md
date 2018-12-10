@@ -8,6 +8,10 @@ For example. Let's say I go to the grocery store and on the first week, I purcha
 
 ![Recommendation differences](https://github.com/RaghuveerRao/Predictive-Recommendation/raw/master/image/recc.JPG)
 
+## Steps and Instructions
+
+### Data files
+Raw data files can be obtained from Kaggle at the following link. Because of license constraints we have not directly uploaded our data on github, but the data is available for free from kaggle at this link: https://www.kaggle.com/c/instacart-market-basket-analysis/data 
 
 ### Feature Engineering
 Our recommender system is different from traditional ones in the aspect of capturing time-based features. Hence, four kinds of features are taken into consideration before implementing our machine learning models: user related features, item related features, user x item related features and time-related features. Feature engineering code is available in Data Preparation.ipynb
@@ -26,8 +30,6 @@ Random forest in an ensemble of decision trees, an Ensemble model is the one in 
 An advantage of running Random forest on AWS configuration of 10 node cluster is that each of the decision trees can be trained parallelly by leveraging the distributed in-memory computing of spark across our AWS clusters. Enabling faster and cost-effective training, as we can scale down our cluster configuration once we are done with training. 
 
 ### Visualisation through Tableau
-The prediction of what a specific user will buy and at what time has been visualized through Tableau dashboard (Tableau Dashboard.twb). The dashboard lets you pick UserId and time & day of the week when the user is visiting and then visualize the probability distribution of what the algorithm will recommend for that user. 
+The prediction of what a specific user will buy and at what time has been visualized through Tableau dashboard (Tableau Dashboard.twb). The dashboard lets you pick UserId and time & day of the week when the user is visiting and then visualize the probability distribution of what the algorithm will recommend for that user. The tableau dashboard is available as Tableau Dashboard.twb
 
-### Data files
-Raw data files can be obtained from Kaggle at the following link
-https://www.kaggle.com/c/instacart-market-basket-analysis/data 
+
