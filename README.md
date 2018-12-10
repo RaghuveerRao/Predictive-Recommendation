@@ -15,6 +15,6 @@ Random forest in an ensemble of decision trees, an Ensemble model is the one in 
 ### Advantage of using Random forest through Spark ML on AWS's EMR clusters
 Advantage of running Random forest on AWS configuration of 10 node cluster is that, each of the decision tree can be trained parallelly by leveraging the distributed in-memory computing of spark across our AWS clusters. Enabling faster and cost effective training, as we can scale down our cluster configuration once we are done with training. 
 
-### Raw data files:
-Raw data files can be assceed from Kaggle at the following link
+### Raw data files
+Raw data files can be obtained from Kaggle at the following link
 https://www.kaggle.com/c/instacart-market-basket-analysis/data 
